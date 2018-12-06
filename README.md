@@ -6,4 +6,4 @@
 访问地址：[http://konwworld.github.io/](http://konwworld.github.io/) 爬不快的蜗牛
 
 
-博客主题使用:[ityouknow](https://github.com/ityouknow/ityouknow.github.io)
+博客主题使用:[纯洁的微笑-ityouknow](https://github.com/ityouknow/ityouknow.github.io)
