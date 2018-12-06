@@ -1,42 +1,46 @@
 ---
-title: 小书匠
-tags: 小书匠,更新
-grammar_footnote: true
-grammar_cjkEmphasis: true
-grammar_cjkRuby: true
----
+layout: post
+title: 关于gitalk的集成问题 Error: Not Found.
+tags: gitalk,github评论，Error: Not Found.
+titlebar: Archives
+subtitle:  
+Resource Archives
+menu: Archives
+permalink: /archives
+--- 
+本文主要将  ，关于gitalk的集成时，遇到Error: Not Found.的原因，已经解决方案
+# 什么是gitalk
 
-# 1.10.0
+	这个网上很多，请自行百度google
 
-## 1.10.0 _新功能_
+## 集成gitalk的步骤
+  1. 引入 js，css
+     省略
+  2. 添加脚本，html
+    省略
+  3. 申请OAuth Apps（clientID 和 clientSecret）
+    注意：Register a new OAuth application 页面时 ，Authorization callback URL 文本框是 你的github 的博客地址 （一般博客地址是 https://username.github.io ,比如我的是 https://konwworld.github.io )
+4. 创建repositories 
+    步骤：1. 右上角头像出进入 your repositories 页面
+               2. 点击 Luangage:All 旁边的 New 进入 https://github.com/new
+               3. Repository name 文本框中 填入 blog-comments 
+               4. 选择Initialize this repository with a README
+               5. 最后点击 Create repository 按钮 
+               6. 完了
+## 遇到的问题
+1. 从头到尾就遇到了一个问题：页面提示 Error: Not Found. URL： https://api.github.com/repos/konwworld/blog-comments/issues?client_id=1f02192554bde9b07bf8&client_secret=bc467ba8d75e23cc041adc841401382b6d41aa28&labels=gitment,%2F2018%2F12%2F06%2Fmarkdonw.html&t=1544105334346 报错 404　
 
- 1. List item
- 2. 实现全文搜索( web 版，及部分无法正常识别 nodejieba 分词组件的操作系统除外)
- 3. 更加强大的文件管理功能
- 4. 浮动预览模式下，可以设置旋转预览，水印预览
- 5. 附件自动识别（非 jpg,gif 等图片扩展名结尾的文件，自动识别为附件）
- 6. 添加数据库压缩功能（压缩后文章的历史记录将会被清空，减少数据占用空间）
- 7. 添加托盘按钮
- 8. codemirror 编辑器代码段高亮识别
+看了很多文章，结果都没有解决我的问题，知道看了一篇文章之后，知道要在　repositories　创建一个ropo的仓库 ，才知道因为自己没有创建这个仓库的原因。
 
-## 1.10.0 _修改_
+2. 最后解决 方案就是 创建一个 ropo 同名的 repositories。
 
-1. 调整退出行为, 用户选择退出或者最小化到系统托盘 #202
-2. 调整预览 todo 的 html 生成方式
-3. 调整预览元数据里的标题(title)及标签(tags),可以在 `设置->预览` 里控制是否显示
-4. 调整预览块级图片, 可以在 `设置->预览` 里控制是否居中包裹，自动填充标题
-5. 调整编辑器块代码快捷键行为(由原来的缩进改成gfm格式的代码块)
-6. 升级 mermaid 到 6.0.0 版本 #206
-7. 修复 mermaid 流程图导出后无法显示文字的问题 #172
-8. 调整同步滚动预览速度 #200
-9. web版本导出PDF文件，脚注有bug #190
-10. 文件列表面板里的按钮调整，改为归档和删除两个按钮 #161
-11. 升级 pouchdb 到 5.3.2
-12. 解决 web 版在平板，手机等浏览器下无法编辑的问题 #185
-13. codemirror vim模式下 esc键失效 #184
-14. 编辑器主题默认为 chocolate
-15. 预览代码主题默认为 vs
-16. 全屏写作或者预览时，默认不再出现背景图片(可以到设置里重新打开或者关闭)
-17. 中文附件名不能正常保存到本地
-18. 修改本地文件关联打开行为
-19. 直接打开编辑.md时 保存后回到文章开头 #183
+## 参考的文章
+1. gitalk 源码：https://github.com/gitalk/gitalk
+2.最重要的一篇，解决了我的问题：https://www.cnblogs.com/laughitover/p/9069219.html 
+3. 介绍了解gitalk 的文章 ：https://www.xttblog.com/?p=2792 
+4. 还有其他的一些gitment ，disqus 的文章，也看了些，在这里因为不是用的这两个所以就不贴看过的文章了。
+
+## 总结
+	搞了好久了，真是假书传万卷，真经一句话啊！还是实践出真知，代码敲起了没有毛病。
+
+
