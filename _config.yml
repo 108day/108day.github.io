@@ -20,9 +20,9 @@ favicon: favicon.png
 #cnblog_url: http://www.cnblogs.com/ityouknow
 #url: http://www.ityouknow.com
 #enforce_ssl: ityouknow.com
-repository: doomsangle/doomsangle.github.io
-github_url: https://github.com/doomsangle
-url: https://doomsangle.github.io
+repository: konwworld/konwworld.github.io
+github_url: https://github.com/konwworld
+url: https://konwworld.github.io
 
 ## Gem
 plugins:
@@ -170,17 +170,17 @@ comments_provider: gitalk
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
 disqus:
-    username: wangjianglou
+    username: konwworld
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: wangjianglou
+    owner: konwworld
     repo: blog-comments
     oauth:
         client_id: 61bfc53d957e74e78f8f
         client_secret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: wangjianglou
+    owner: konwworld
     repo: blog-comments
     clientID: 61bfc53d957e74e78f8f
     clientSecret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
