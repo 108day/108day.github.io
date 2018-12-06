@@ -1,12 +1,9 @@
 ---
 layout: post
-title: 关于gitalk的集成问题 Error: Not Found.
-tags: gitalk,github评论，Error: Not Found.
-titlebar: Archives
-subtitle:  
-Resource Archives
-menu: Archives
-permalink: /archives
+title: 	关于gitalk的集成问题 Error: Not Found.
+no-post-nav: true
+category: other
+tags: [other]
 --- 
 本文主要将  ，关于gitalk的集成时，遇到Error: Not Found.的原因，已经解决方案
 # 什么是gitalk
