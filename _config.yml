@@ -182,7 +182,7 @@ gitment:
 gitalk:
     owner: konwworld
     repo: blog-comments
-    clientID: 1afc7f61637acd7771cc
-    clientSecret: 4aeaed2b46e16f93dc726164fe7a450654baf561
+    clientID: 1f02192554bde9b07bf8
+    clientSecret: 615f451a41a0d0fa09621599ade06a7ab21b5587
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : true
