@@ -9,7 +9,7 @@ permalink: /link
 
 
 ## 友情链接
-
+- [纯洁的微笑](http://www.ityouknow.com/) - 分享技术，品味人生！
 - [匠心零度博客](http://www.jiangxinlingdu.com/) - 以匠心，铸非凡！
 - [麦田技术博客](http://blog.itmyhome.com/) - 将来的你，一定会感激现在拼命努力的自己。 
 - [王登科-DK博客](http://www.wdk.pw) - 一个技术创业者  
@@ -40,19 +40,16 @@ permalink: /link
 
 ## 个人链接
 
-- [ityouknow](http://www.ityouknow.com/) - 个人独立博客
-- [github](https://github.com/ityouknow) -  我分享代码的地方
-- [微博](http://weibo.com/ityouknow) -  我的微博
+- [github](https://github.com/doomsangle) -  我分享代码的地方
 - [知乎](https://www.zhihu.com/people/ityouknow) - 个人知乎地址，用的不太多大多数都在潜水
-- [博客园](https://www.cnblogs.com/ityouknow/) - 博客园个人博客，最开始写博客的地方
-- [CSDN](http://blog.csdn.net/ityouknow)  - 最开始写博客的地方
-- [51CTO](http://blog.51cto.com/ityouknow) - 51Cto地址，虽然一直没有用过
+- [博客园](https://www.cnblogs.com/wangjianglou/) - 博客园个人博客，最开始写博客的地方
+- [CSDN](https://www.cnblogs.com/wangjianglou/)  - 最开始写博客的地方
 
 ## 其它  
 
 *需要展示你的网站，就在本页下面留言吧，也算是一种宣传方式。格式要求如下：*
 
-- 网站名称：ityouknow  
-- 网站链接：http://www.ityouknow.com  
-- 网站描述：neo 的个人博客，分享技术，分享生活  
+- 网站名称：望江楼  
+- 网站链接：http://www.wangjianglou.com  
+- 网站描述：个人博客，分享技术，记录生活，儒身，释心，道途，万法归元
 

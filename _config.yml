@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:  修身问道
+title:  望江楼
 subtitle: 儒身，释心，道途，万法归元
 name: 修身问道
 email: zhaosheji.kevin@gmail.com
-description: 本站是修身问道的生活技术分享博客。内容涵盖小说，生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构、大数据演进、高可用架构、中间件使用、系统监控等相关的研究与知识分享。
+description: 本站是望江楼的生活技术分享博客。内容涵盖小说，生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构、大数据演进、高可用架构、中间件使用、系统监控等相关的研究与知识分享。
 keywords: 修身问道,儒身，释心，道途，万法归元,Spring,Spring Boot,Spring Cloud,MongoDB,Java,Jvm,Docker,生活故事,架构,大数据,一线,开发者,编程,代码,开源,IT网站,物联网,Developer,Programmer,Coder,Geek,IT技术博客,Java,C/C++,Python,Shell
 encoding: "utf-8"
 favicon: favicon.png 
@@ -170,17 +170,17 @@ comments_provider: gitalk
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
 disqus:
-    username: onelivelife
+    username: wangjianglou
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: onelivelife
+    owner: wangjianglou
     repo: blog-comments
     oauth:
         client_id: 61bfc53d957e74e78f8f
         client_secret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: onelivelife
+    owner: wangjianglou
     repo: blog-comments
     clientID: 61bfc53d957e74e78f8f
     clientSecret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
