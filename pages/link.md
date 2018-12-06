@@ -40,16 +40,15 @@ permalink: /link
 
 ## 个人链接
 
-- [github](https://github.com/doomsangle) -  我分享代码的地方
+- [github](https://github.com/konwworld) -  我分享代码的地方
 - [知乎](https://www.zhihu.com/people/ityouknow) - 个人知乎地址，用的不太多大多数都在潜水
 - [博客园](https://www.cnblogs.com/wangjianglou/) - 博客园个人博客，最开始写博客的地方
-- [CSDN](https://www.cnblogs.com/wangjianglou/)  - 最开始写博客的地方
 
 ## 其它  
 
 *需要展示你的网站，就在本页下面留言吧，也算是一种宣传方式。格式要求如下：*
 
-- 网站名称：望江楼  
-- 网站链接：http://www.wangjianglou.com  
-- 网站描述：个人博客，分享技术，记录生活，儒身，释心，道途，万法归元
+- 网站名称：爬不快的蜗牛 
+- 网站链接：https://github.com/konwworld  
+- 网站描述：个人博客，分享技术，记录生活，儒身，释心，道途，儒释道，万法归元
 
