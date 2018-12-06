@@ -174,14 +174,14 @@ disqus:
 # https://imsun.net/posts/gitment-comments/
 gitment:
     owner: konwworld
-    repo: blogcomments
+    repo: blog-comments
     oauth:
         client_id: 18c2d6d97d67926035b5
         client_secret: 1b157be502423178a234a36f92e1f1ee23008987
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: konwworld
-    repo: myblog-comments
+    repo: blog-comments
     clientID: 1f02192554bde9b07bf8
     clientSecret: bc467ba8d75e23cc041adc841401382b6d41aa28
 # 在使用其它评论组件时可点击显示 Disqus
