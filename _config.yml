@@ -171,18 +171,18 @@ comments_provider: gitalk
 # https://disqus.com
 disqus:
     username: konwworld
-# https://imsun.net/posts/gitment-introduction/
+# https://imsun.net/posts/gitment-comments/
 gitment:
     owner: konwworld
     repo: blog-comments
     oauth:
-        client_id: 61bfc53d957e74e78f8f
-        client_secret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
+        client_id: 18c2d6d97d67926035b5
+        client_secret: 1b157be502423178a234a36f92e1f1ee23008987
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: konwworld
     repo: blog-comments
-    clientID: 61bfc53d957e74e78f8f
-    clientSecret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
+    clientID: 1afc7f61637acd7771cc
+    clientSecret: 4aeaed2b46e16f93dc726164fe7a450654baf561
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : true
