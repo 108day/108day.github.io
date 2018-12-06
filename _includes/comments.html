@@ -65,8 +65,8 @@
       {% endif %}
     {% when 'gitment' %}
         <div id="container"></div>
-        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-        <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+         <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+         <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
         <script>
         var gitment = new Gitment({
             id: '{{ page.url }}',
@@ -81,7 +81,7 @@
         </script>
     {% when 'gitalk' %}
         <div id="gitalk-container"></div>
-        <script src="https://konwworld.github.io/assets/js/gitalk.min.js"></script>
+        <script src="/assets/js/gitalk.min.js"></script>
         <script>
         var gitalk = new Gitalk({
             id: '{{ page.url }}',
