@@ -2,12 +2,13 @@
 title: github集成gitalk
 tags: Github,Gitalk,评论功能
 titlebar: arch
+time: 2018-12-6
 ---
 
 ## 概要
- 	本文主要讲解 gitalk 使用过程遇到的问题： Error: Not Found.
+> 本文主要讲解 gitalk 使用过程遇到的问题： Error: Not Found.
 ## 什么是gitalk
-Gitalk is a modern comment component based on GitHub Issue and Preact.
+> Gitalk is a modern comment component based on GitHub Issue and Preact.
 ## gitalk的特征？
 
 + Authentication with github account
