@@ -20,9 +20,9 @@ favicon: favicon.png
 #cnblog_url: http://www.cnblogs.com/ityouknow
 #url: http://www.ityouknow.com
 #enforce_ssl: ityouknow.com
-repository: konwworld/konwworld.github.io
-github_url: https://github.com/konwworld
-url: https://konwworld.github.io
+repository: 108day/108day.github.io
+github_url: https://github.com/108day
+url: https://108day.github.io
 
 ## Gem
 plugins:
@@ -170,17 +170,17 @@ comments_provider: gitalk
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
 disqus:
-    username: konwworld
+    username: 108day
 # https://imsun.net/posts/gitment-comments/
 gitment:
-    owner: konwworld
+    owner: 108day
     repo: blog-comments
     oauth:
         client_id: 18c2d6d97d67926035b5
         client_secret: 1b157be502423178a234a36f92e1f1ee23008987
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: konwworld
+    owner: 108day
     repo: blog-comments
     clientID: 1f02192554bde9b07bf8
     clientSecret: bc467ba8d75e23cc041adc841401382b6d41aa28
