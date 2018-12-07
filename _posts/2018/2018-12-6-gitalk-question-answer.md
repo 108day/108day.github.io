@@ -1,7 +1,7 @@
 ---
 title: github集成gitalk
-tags: gitalk，github评论
-
+tags: Github,Gitalk,评论功能
+titlebar: arch
 ---
 
 ## 概要
