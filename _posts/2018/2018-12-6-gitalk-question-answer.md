@@ -38,8 +38,8 @@ Gitalk is a modern comment component based on GitHub Issue and Preact.
 ```
 <div id="gitalk-container"></div>
 ```
- ####  加载gitalk的javascirpt脚本插件
- ```
+#### 加载gitalk的javascirpt脚本插件
+```
    const gitalk = new Gitalk({
         clientID: 'GitHub Application Client ID',
         clientSecret: 'GitHub Application Client Secret',
@@ -50,7 +50,7 @@ Gitalk is a modern comment component based on GitHub Issue and Preact.
         distractionFreeMode: false  // Facebook-like distraction free mode
       }) 
       gitalk.render('gitalk-container')
- ```
+```
 ### 3、申请OAuth Apps（clientID 和 clientSecret）
     注意：Register a new OAuth application 页面时 ，Authorization callback URL 文本框是 你的github 的博客地址 （一般博客地址是 https://username.github.io ,比如我的是 https://108day.github.io )
 ### 4 、创建repositories ( 与ropo参数同名)
