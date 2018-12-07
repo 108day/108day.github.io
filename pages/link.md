@@ -41,8 +41,8 @@ permalink: /link
 ## 个人链接
 
 - [github](https://github.com/108day) -  我分享代码的地方
-- [知乎](https://www.zhihu.com/people/ityouknow) - 个人知乎地址，用的不太多大多数都在潜水
-- [博客园](https://www.cnblogs.com/wangjianglou/) - 博客园个人博客，最开始写博客的地方
+- [知乎](https://zhihu.com/people/108day/) - 个人知乎地址，用的不太多大多数都在潜水
+- [博客园](https://www.cnblogs.com/108day/) - 博客园个人博客，最开始写博客的地方
 
 ## 其它  
 
