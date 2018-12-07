@@ -7,11 +7,11 @@
 
 # Site settings
 title:  爬不快的蜗牛
-subtitle: 儒身，释心，道途，儒释道，万法归元
+subtitle: 记录人生.不负韶光
 name: 爬不快的蜗牛
 email: zhaosheji.kevin@gmail.com
 description: 本站是望江楼的生活技术分享博客。内容涵盖小说，生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构、大数据演进、高可用架构、中间件使用、系统监控等相关的研究与知识分享。
-keywords: 修身问道,儒身，释心，道途，儒释道，万法归元,Spring,Spring Boot,Spring Cloud,MongoDB,Java,Jvm,Docker,生活故事,架构,大数据,一线,开发者,编程,代码,开源,IT网站,物联网,Developer,Programmer,Coder,Geek,IT技术博客,Java,C/C++,Python,Shell
+keywords: 108day,zhaosheji.kevin@gmail.com,记录人生.不负韶光,Spring,Spring Boot,Spring Cloud,MongoDB,Java,Jvm,Docker,生活故事,架构,大数据,一线,开发者,编程,代码,开源,IT网站,物联网,Developer,Programmer,Coder,Geek,IT技术博客,Java,C/C++,Python,Shell
 encoding: "utf-8"
 favicon: favicon.png 
 
