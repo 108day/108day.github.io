@@ -110,15 +110,12 @@ labels:
  #   href: /fastdfs.html
  #  name: FastDFS
 
- # -
- #   href: /mongodb.html
- #   name: MongoDB
+  -
+    href: /mongodb.html
+    name: MongoDB
   -
     href: /internet_of_things.html
     name: 物联网
-  -
-    href: /mysql.html
-    name: mysql
 
   -
     href: /open-source.html
@@ -163,7 +160,7 @@ side_bar_repo_limit: 6 # Number of repos to show
 # For about.html. Fell free to create your own!
 skill_software_keywords: [Java, MySQL, Oracle, Design Patterns]
 skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
-skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, ExpressJS, MongoDB, Redis, PHP,  Boostrap]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, Redis, Redis, MongoDB, PHP, C/C++, Boostrap]
 skill_mobile_app_keywords: [vuejs, hyhird app]
 
 
