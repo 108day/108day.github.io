@@ -39,7 +39,7 @@ Gitalk is a modern comment component based on GitHub Issue and Preact.
 <div id="gitalk-container"></div>
 ```
 #### 加载gitalk的javascirpt脚本插件
-```
+```javascript
    const gitalk = new Gitalk({
         clientID: 'GitHub Application Client ID',
         clientSecret: 'GitHub Application Client Secret',
@@ -58,12 +58,12 @@ Gitalk is a modern comment component based on GitHub Issue and Preact.
 ### 4 、创建repositories ( 与ropo参数同名)
 
 	步骤：
-        > 4.1 右上角头像出进入 your repositories 页面
-        > 4.2. 点击 Luangage:All 旁边的 New 进入 https://github.com/new 
-        > 4.3. Repository name 文本框中 填入 blog-comments  
-        > 4.4. 选择Initialize this repository with a README 
-        > 4.5. 最后点击 Create repository 按钮  
-        > 4.6. 完了 
+        >  4.1 右上角头像出进入 your repositories 页面
+        >  4.2. 点击 Luangage:All 旁边的 New 进入 https://github.com/new 
+        >  4.3. Repository name 文本框中 填入 blog-comments  
+        >  4.4. 选择Initialize this repository with a README 
+        >  4.5. 最后点击 Create repository 按钮  
+        >  4.6. 完了 
                
 ## 遇到的问题
 
