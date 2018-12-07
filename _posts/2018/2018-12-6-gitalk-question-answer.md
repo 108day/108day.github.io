@@ -31,13 +31,16 @@ tags: gitalk，github评论
 ## 遇到的问题
 
   1. 从头到尾就遇到了一个问题：
+#### 问题描述
+
 	页面提示 Error: Not Found. URL：
     URL报错 404：https://api.github.com/repos/108day/blog-comments/issues?client_id=1f02192554bde9b07bf8&client_secret=bc467ba8d75e23cc041adc841401382b6d41aa28&labels=gitment,%2F2018%2F12%2F06%2Fmarkdonw.html&t=1544105334346 
+    
+#### 解决方案
+  		最后解决方案就是创建一个 ropo 同名的 repositories。
 
-  2. 最后解决 方案就是 创建一个 ropo 同名的 repositories。
-
-
-		看了很多文章，结果都没有解决我的问题，知道看了一篇文章之后，知道要在　repositories　创建一个ropo的仓库 ，才知道因为自己没有创建这个仓库的原因。
+		看了很多文章，结果都没有解决我的问题，
+        直到看了[一篇文章]后(https://www.cnblogs.com/laughitover/p/9069219.html)之，知道要在repositories创建一个ropo名称的仓库 ，才知道因为自己没有创建仓库的原因。
 
 ## 参考的文章
 
