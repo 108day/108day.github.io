@@ -24,8 +24,8 @@ Gitalk is a modern comment component based on GitHub Issue and Preact.
 	<br>快捷键提交评论（ctrl + enter）
 ## 集成gitalk的步骤
 
-+ 1、引入 js，css 
-``` html
+### 1、引入 js，css 
+```
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
   <!-- or -->
@@ -33,14 +33,14 @@ Gitalk is a modern comment component based on GitHub Issue and Preact.
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
  ```
 
-+ 2、添加脚本，html 
-在你的页面需要评论的地方加上这个标签，用来展示评论的<br>
-``` html
+### 2、添加脚本，html 
+#### 在你的页面需要评论的地方加上这个标签，用来展示评论的<br>
+```
 <div id="gitalk-container"></div>
 ```
-加载gitalk的javascirpt脚本插件
+ #### 加载gitalk的javascirpt脚本插件
 
-    ``` javascript 
+    ```  
     const gitalk = new Gitalk({
       clientID: 'GitHub Application Client ID',
       clientSecret: 'GitHub Application Client Secret',
@@ -52,9 +52,9 @@ Gitalk is a modern comment component based on GitHub Issue and Preact.
     })
     gitalk.render('gitalk-container') 
     ```
-+ 3、申请OAuth Apps（clientID 和 clientSecret）
+### 3、申请OAuth Apps（clientID 和 clientSecret）
     注意：Register a new OAuth application 页面时 ，Authorization callback URL 文本框是 你的github 的博客地址 （一般博客地址是 https://username.github.io ,比如我的是 https://108day.github.io )
-+ 4 、创建repositories 
+### 4 、创建repositories ( 与ropo参数同名)
 	步骤：
         > 4.1 右上角头像出进入 your repositories 页面
         > 4.2. 点击 Luangage:All 旁边的 New 进入 https://github.com/new 
