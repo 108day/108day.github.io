@@ -9,17 +9,24 @@ tags: gitalk，github评论
 ## 什么是gitalk
 Gitalk is a modern comment component based on GitHub Issue and Preact.
 ## gitalk的特征？
-* Authentication with github account
-* Serverless, all comments will be stored as github issues
-* Both personal and organization github projects can be used to store comments
-* Localization, support multiple languages [en, zh-CN, zh-TW, es-ES, fr, ru]
-* Facebook-like distraction free mode (Can be enabled via the distractionFreeMode option)
-* Hotkey submit comment (cmd|ctrl + enter)
 
++ Authentication with github account
+ 需要github账号认证
++ Serverless, all comments will be stored as github issues 
+微服务的，所以评论信息都存储在github的issues
++ Both personal and organization github projects can be used to store comments
+个人和组织都可以使用github项目来存储评论信息
++ Localization, support multiple languages [en, zh-CN, zh-TW, es-ES, fr, ru]
+支持本地、多语言
++ Facebook-like distraction free mode (Can be enabled via the distractionFreeMode option)
+ 	类似Facebook的无分心模式(可以通过分心FreeMode选项启用)金山翻译的
++ Hotkey submit comment (ctrl + enter)
+	快捷键提交评论（ctrl + enter）
 ## 集成gitalk的步骤
 
 + 1. 引入 js，css 
-```<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+``` xml
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
   <!-- or -->
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
@@ -31,7 +38,7 @@ Gitalk is a modern comment component based on GitHub Issue and Preact.
 `<div id="gitalk-container"></div>`
 加载gitalk的javascirpt脚本插件
 
-    ```markdown
+    ``` javascript 
     const gitalk = new Gitalk({
       clientID: 'GitHub Application Client ID',
       clientSecret: 'GitHub Application Client Secret',
@@ -41,10 +48,11 @@ Gitalk is a modern comment component based on GitHub Issue and Preact.
       id: location.pathname,      // Ensure uniqueness and length less than 50
       distractionFreeMode: false  // Facebook-like distraction free mode
     })
-    gitalk.render('gitalk-container') ```
+    gitalk.render('gitalk-container') 
+    ```
 + 3. 申请OAuth Apps（clientID 和 clientSecret）
     注意：Register a new OAuth application 页面时 ，Authorization callback URL 文本框是 你的github 的博客地址 （一般博客地址是 https://username.github.io ,比如我的是 https://108day.github.io )
-+ 4. 创建repositories <br>
++ 4. 创建repositories 
 步骤：
         + 4.1 右上角头像出进入 your repositories 页面
         + 4.2. 点击 Luangage:All 旁边的 New 进入 https://github.com/new 
@@ -64,8 +72,7 @@ Gitalk is a modern comment component based on GitHub Issue and Preact.
 URL报错 [404](https://api.github.com/repos/108day/blog-comments/issues?client_id=1f02192554bde9b07bf8&client_secret=bc467ba8d75e23cc041adc841401382b6d41aa28&labels=gitment,%2F2018%2F12%2F06%2Fmarkdonw.html&t=1544105334346 )
     
 #### 解决方案
- 最后解决方案就是创建一个 ropo 同名的 repositories。
-
+最后解决方案就是创建一个 ropo 同名的 repositories。
 看了很多文章，结果都没有解决我的问题，
 直到看了[这篇文章](https://www.cnblogs.com/laughitover/p/9069219.html/) 之后，
 知道要在repositories创建一个ropo名称的仓库 ，才知道因为自己没有创建仓库的原因。
