@@ -13,19 +13,19 @@ Gitalk is a modern comment component based on GitHub Issue and Preact.
 + Authentication with github account
  需要github账号认证
 + Serverless, all comments will be stored as github issues 
-微服务的，所以评论信息都存储在github的issues
+<br>微服务的，所以评论信息都存储在github的issues
 + Both personal and organization github projects can be used to store comments
-个人和组织都可以使用github项目来存储评论信息
+<br>个人和组织都可以使用github项目来存储评论信息
 + Localization, support multiple languages [en, zh-CN, zh-TW, es-ES, fr, ru]
-支持本地、多语言
+<br>支持本地、多语言
 + Facebook-like distraction free mode (Can be enabled via the distractionFreeMode option)
- 	类似Facebook的无分心模式(可以通过分心FreeMode选项启用)金山翻译的
+ 	<br>类似Facebook的<无分散模式>(可以通过distractionFreeMode<无分散模式>选项启用)
 + Hotkey submit comment (ctrl + enter)
-	快捷键提交评论（ctrl + enter）
+	<br>快捷键提交评论（ctrl + enter）
 ## 集成gitalk的步骤
 
 + 1、引入 js，css 
-``` markdown
+``` html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
   <!-- or -->
@@ -35,7 +35,7 @@ Gitalk is a modern comment component based on GitHub Issue and Preact.
 
 + 2、添加脚本，html 
 在你的页面需要评论的地方加上这个标签，用来展示评论的<br>
-```markdown
+``` html
 <div id="gitalk-container"></div>
 ```
 加载gitalk的javascirpt脚本插件
