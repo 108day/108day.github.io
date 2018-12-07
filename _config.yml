@@ -140,7 +140,10 @@ classes:
     href: /jvm.html
     name: Jvm系列文章
     describe: Java之根基，Java程序员必学
-
+  -
+    href: /internet_of_things.html
+    name: 物联网
+    describe: 连接你我，连接世界
 
 # ---------------- #
 #       RSS        #
