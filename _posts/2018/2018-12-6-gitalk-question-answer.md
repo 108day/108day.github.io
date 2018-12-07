@@ -1,11 +1,12 @@
 ---
-layout: post
-title: 	关于gitalk的集成问题 Error: Not Found.
-no-post-nav: true
-category: other
-tags: [other]
---- 
-本文主要将  ，关于gitalk的集成时，遇到Error: Not Found.的原因，已经解决方案
+title: github集成gitalk
+tags: gitalk，github评论
+
+---
+
+# 概要
+ 本文主要讲解 gitalk 使用过程遇到的问题： Error: Not Found.
+
 # 什么是gitalk
 
 	这个网上很多，请自行百度google
@@ -25,7 +26,9 @@ tags: [other]
                5. 最后点击 Create repository 按钮 
                6. 完了
 ## 遇到的问题
-1. 从头到尾就遇到了一个问题：页面提示 Error: Not Found. URL： https://api.github.com/repos/konwworld/blog-comments/issues?client_id=1f02192554bde9b07bf8&client_secret=bc467ba8d75e23cc041adc841401382b6d41aa28&labels=gitment,%2F2018%2F12%2F06%2Fmarkdonw.html&t=1544105334346 报错 404　
+1. 从头到尾就遇到了一个问题：
+	页面提示 Error: Not Found. URL：
+    https://api.github.com/repos/konwworld/blog-comments/issues?client_id=1f02192554bde9b07bf8&client_secret=bc467ba8d75e23cc041adc841401382b6d41aa28&labels=gitment,%2F2018%2F12%2F06%2Fmarkdonw.html&t=1544105334346 报错 404　
 
 看了很多文章，结果都没有解决我的问题，知道看了一篇文章之后，知道要在　repositories　创建一个ropo的仓库 ，才知道因为自己没有创建这个仓库的原因。
 
