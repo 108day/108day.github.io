@@ -91,10 +91,12 @@ labels:
   -
     href: #
     name: 资源
-
+  -
+    href: /novel.html
+    name: 小说
   -
     href: /life.html
-    name: 小说
+    name: 故事
 
   -
     href: /arch.html
@@ -130,7 +132,7 @@ classes:
     name: 我的故事
     describe: 生活就是故事，故事就是生活
   -
-    href: /life.html
+    href: /novel.html
     name: 我的小说
     describe: 人总要有点梦想，不然和咸鱼有什么区别
   -
