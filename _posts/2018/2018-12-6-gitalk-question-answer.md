@@ -13,14 +13,12 @@ tags: gitalk，github评论
 
 ## 集成gitalk的步骤
 
-  1. 引入 js，css 
-     省略
-  2. 添加脚本，html 
-    省略
-  3. 申请OAuth Apps（clientID 和 clientSecret）
+  1. 引入 js，css <br>省略
+  2. 添加脚本，html <br>省略
+  3. 申请OAuth Apps（clientID 和 clientSecret）<br>
     注意：Register a new OAuth application 页面时 ，Authorization callback URL 文本框是 你的github 的博客地址 （一般博客地址是 https://username.github.io ,比如我的是 https://108day.github.io )
-  4. 创建repositories 
-    步骤：
+  4. 创建repositories <br>
+    步骤：<br>
                1. 右上角头像出进入 your repositories 页面
                2. 点击 Luangage:All 旁边的 New 进入 https://github.com/new
                3. Repository name 文本框中 填入 blog-comments 
@@ -30,24 +28,26 @@ tags: gitalk，github评论
                
 ## 遇到的问题
 
-  1. 从头到尾就遇到了一个问题：
+### 问题一
+
 #### 问题描述
 
 	页面提示 Error: Not Found. URL：
-    URL报错 404：https://api.github.com/repos/108day/blog-comments/issues?client_id=1f02192554bde9b07bf8&client_secret=bc467ba8d75e23cc041adc841401382b6d41aa28&labels=gitment,%2F2018%2F12%2F06%2Fmarkdonw.html&t=1544105334346 
+    URL报错 [404](https://api.github.com/repos/108day/blog-comments/issues?client_id=1f02192554bde9b07bf8&client_secret=bc467ba8d75e23cc041adc841401382b6d41aa28&labels=gitment,%2F2018%2F12%2F06%2Fmarkdonw.html&t=1544105334346)
     
 #### 解决方案
   		最后解决方案就是创建一个 ropo 同名的 repositories。
 
 		看了很多文章，结果都没有解决我的问题，
-        直到看了[一篇文章]后(https://www.cnblogs.com/laughitover/p/9069219.html)之，知道要在repositories创建一个ropo名称的仓库 ，才知道因为自己没有创建仓库的原因。
+        直到看了[这篇文章](https://www.cnblogs.com/laughitover/p/9069219.html/) 之后，
+        知道要在repositories创建一个ropo名称的仓库 ，才知道因为自己没有创建仓库的原因。
 
 ## 参考的文章
 
-  1. gitalk源码：https://github.com/gitalk/gitalk 
-  2. 最重要的一篇，解决了我的问题：https://www.cnblogs.com/laughitover/p/9069219.html 
-  3. 介绍了解gitalk 的文章 ：https://www.xttblog.com/?p=2792 
-  4. 还有其他的一些gitment ，disqus 的文章，也看了些，在这里因为不是用的这两个所以就不贴看过的文章了。
+	  1. gitalk源码：https://github.com/gitalk/gitalk
+	  2. 最重要的一篇，解决了我的问题：https://www.cnblogs.com/laughitover/p/9069219.html
+	  3. 介绍了解gitalk 的文章 ：https://www.xttblog.com/?p=2792
+	  4. 还有其他的一些gitment ，disqus 的文章，也看了些，在这里因为不是用的这两个所以就不贴看过的文章了。
 
 ## 总结
 
