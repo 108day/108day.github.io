@@ -90,11 +90,11 @@ labels:
 
   -
     href: #
-    name: 共享资源
+    name: 资源
 
   -
     href: /life.html
-    name: 故事
+    name: 小说
 
   -
     href: /arch.html
@@ -102,19 +102,21 @@ labels:
     
   -
     href: /jvm.html
-    name: Jvm
+    name: JVM
 
-  -
-    href: /fastdfs.html
-    name: FastDFS
+ # -
+ #   href: /fastdfs.html
+ #  name: FastDFS
 
+ # -
+ #   href: /mongodb.html
+ #   name: MongoDB
   -
-    href: /mongodb.html
-    name: MongoDB
-
+    href: /internet_of_things.html
+    name: 物联网
   -
-    href: /docker.html
-    name: Docker
+    href: /mysql.html
+    name: mysql
 
   -
     href: /open-source.html
@@ -127,12 +129,14 @@ classes:
     href: /life.html
     name: 我的故事
     describe: 生活就是故事，故事就是生活
-
+  -
+    href: /life.html
+    name: 我的小说
+    describe: 人总要有点梦想，不然和咸鱼有什么区别
   -
     href: /arch.html
     name: 架构师之路
-    describe: 一个架构师的自我修养
-
+    describe: 架构师的自我修养
   -
     href: /jvm.html
     name: Jvm系列文章
