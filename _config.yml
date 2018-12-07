@@ -7,7 +7,7 @@
 
 # Site settings
 title:  一百零八天
-subtitle: 记录人生，分享技术。珍惜时间，不负韶光。
+subtitle: 记录人生，分享技术。<br>珍惜时间，不负韶光。
 name: 一百零八天
 email: zhaosheji.kevin@gmail.com
 description: 本站是一百零八天的生活技术分享博客。内容涵盖小说，生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构、大数据演进、高可用架构、中间件使用、系统监控等相关的研究与知识分享。
