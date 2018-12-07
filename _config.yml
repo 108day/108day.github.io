@@ -22,7 +22,7 @@ favicon: favicon.png
 #enforce_ssl: ityouknow.com
 repository: 108day/108day.github.io
 github_url: https://github.com/108day
-url: http://www.108day.com
+url: https://108day.github.io
 
 ## Gem
 plugins:
