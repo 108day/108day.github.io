@@ -85,6 +85,6 @@ URL报错 [404](https://api.github.com/repos/108day/blog-comments/issues?client_
 
 ## 总结
 
-搞了好久了，真是假书传万卷，真经一句话啊！还是实践出真知，代码敲起了没有毛病。
+搞了好久了，真传一句话 假传万卷书！还是要实践才能出真知啊！
 
 
