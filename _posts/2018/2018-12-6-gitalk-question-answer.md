@@ -1,13 +1,15 @@
 ---
 title: github集成gitalk
-tags: gitalk，github评论
-
+tags: Github,Gitalk,评论功能
+titlebar: arch
+author: 一百零八天
+emial: zhaosheji.kevin@gmail.com
 ---
 
 ## 概要
- 	本文主要讲解 gitalk 使用过程遇到的问题： Error: Not Found.
+本文主要讲解 gitalk 使用过程遇到的问题： Error: Not Found.
 ## 什么是gitalk
-Gitalk is a modern comment component based on GitHub Issue and Preact.
+> Gitalk is a modern comment component based on GitHub Issue and Preact.
 ## gitalk的特征？
 
 + Authentication with github account
@@ -53,17 +55,18 @@ Gitalk is a modern comment component based on GitHub Issue and Preact.
 ```
 ### 3、申请OAuth Apps（clientID 和 clientSecret）
 
-   		在Register a new OAuth application 页面时 ，Authorization callback URL文本框是你的github 的博客地址 （一般博客地址是 https://username.github.io ,比如我的是 https://108day.github.io )
+   在Register a new OAuth application 页面时 ,Authorization callback URL文本框是你的github 的博客地址 
+  （一般博客地址是 https://xxxxxxx.github.io ,比如我的是 https://108day.github.io )
 
 ### 4 、创建repositories ( 与ropo参数同名)
 
 	步骤：
-        >  4.1 右上角头像出进入 your repositories 页面
-        >  4.2. 点击 Luangage:All 旁边的 New 进入 https://github.com/new 
-        >  4.3. Repository name 文本框中 填入 blog-comments  
-        >  4.4. 选择Initialize this repository with a README 
-        >  4.5. 最后点击 Create repository 按钮  
-        >  4.6. 完了 
+        4.1 右上角头像出进入 your repositories 页面
+        4.2. 点击 Luangage:All 旁边的 New 进入 https://github.com/new 
+        4.3. Repository name 文本框中 填入 blog-comments  
+        4.4. 选择Initialize this repository with a README 
+        4.5. 最后点击 Create repository 按钮  
+        4.6. 完了 
                
 ## 遇到的问题
 
