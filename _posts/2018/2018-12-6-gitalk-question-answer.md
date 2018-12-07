@@ -13,13 +13,13 @@ tags: gitalk，github评论
 
 ## 集成gitalk的步骤
 
-  ### 1. 引入 js，css
+1. 引入 js，css
      省略
-  ### 2. 添加脚本，html
+2. 添加脚本，html
     省略
- ###  3. 申请OAuth Apps（clientID 和 clientSecret）
+3. 申请OAuth Apps（clientID 和 clientSecret）
     注意：Register a new OAuth application 页面时 ，Authorization callback URL 文本框是 你的github 的博客地址 （一般博客地址是 https://username.github.io ,比如我的是 https://konwworld.github.io )
-### 4. 创建repositories 
+4. 创建repositories 
     步骤：1. 右上角头像出进入 your repositories 页面
                2. 点击 Luangage:All 旁边的 New 进入 https://github.com/new
                3. Repository name 文本框中 填入 blog-comments 
@@ -33,7 +33,7 @@ tags: gitalk，github评论
 	页面提示 Error: Not Found. URL：
     https://api.github.com/repos/konwworld/blog-comments/issues?client_id=1f02192554bde9b07bf8&client_secret=bc467ba8d75e23cc041adc841401382b6d41aa28&labels=gitment,%2F2018%2F12%2F06%2Fmarkdonw.html&t=1544105334346 报错 404　
 
-看了很多文章，结果都没有解决我的问题，知道看了一篇文章之后，知道要在　repositories　创建一个ropo的仓库 ，才知道因为自己没有创建这个仓库的原因。
+	`看了很多文章，结果都没有解决我的问题，知道看了一篇文章之后，知道要在　repositories　创建一个ropo的仓库 ，才知道因为自己没有创建这个仓库的原因。`
 
 2. 最后解决 方案就是 创建一个 ropo 同名的 repositories。
 
