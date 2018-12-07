@@ -19,12 +19,12 @@ tags: gitalk，github评论
     注意：Register a new OAuth application 页面时 ，Authorization callback URL 文本框是 你的github 的博客地址 （一般博客地址是 https://username.github.io ,比如我的是 https://108day.github.io )
   4. 创建repositories <br>
     步骤：<br>
-               1. 右上角头像出进入 your repositories 页面
-               2. 点击 Luangage:All 旁边的 New 进入 https://github.com/new
-               3. Repository name 文本框中 填入 blog-comments 
-               4. 选择Initialize this repository with a README
-               5. 最后点击 Create repository 按钮 
-               6. 完了
+               1. 右上角头像出进入 your repositories 页面<br>
+               2. 点击 Luangage:All 旁边的 New 进入 https://github.com/new <br>
+               3. Repository name 文本框中 填入 blog-comments  <br>
+               4. 选择Initialize this repository with a README <br>
+               5. 最后点击 Create repository 按钮  <br>
+               6. 完了 <br>
                
 ## 遇到的问题
 
@@ -33,7 +33,10 @@ tags: gitalk，github评论
 #### 问题描述
 
 	页面提示 Error: Not Found. URL：
-    URL报错 [404](https://api.github.com/repos/108day/blog-comments/issues?client_id=1f02192554bde9b07bf8&client_secret=bc467ba8d75e23cc041adc841401382b6d41aa28&labels=gitment,%2F2018%2F12%2F06%2Fmarkdonw.html&t=1544105334346)
+    
+    URL报错 [404](https://api.github.com/repos/108day/blog-comments/issues?
+    						client_id=1f02192554bde9b07bf8&client_secret=bc467ba8d75e23cc041adc841401382b6d41aa28
+    &labels=gitment,%2F2018%2F12%2F06%2Fmarkdonw.html&t=1544105334346)
     
 #### 解决方案
   		最后解决方案就是创建一个 ropo 同名的 repositories。
