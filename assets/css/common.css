@@ -158,8 +158,8 @@
 /** Post List **/
 .post-list-item {
     position: relative;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     list-style: none;
     border-bottom: 1px solid #eee;
 }
