@@ -1,7 +1,7 @@
 ---
 title: github集成gitalk
 tags: Github,Gitalk,评论功能
-titlebar: arch
+titlebar:集成gitalk在GIthub项目中
 author: 一百零八天
 
 ---
