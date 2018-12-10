@@ -3,7 +3,7 @@ title: github集成gitalk
 tags: Github,Gitalk,评论功能
 titlebar: arch
 author: 一百零八天
-emial: zhaosheji.kevin@gmail.com
+
 ---
 
 ## 概要
