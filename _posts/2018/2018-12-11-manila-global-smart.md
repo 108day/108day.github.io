@@ -1,11 +1,11 @@
 ---
 layout:     post
-title:       菲律宾旅游通话流量套餐
-tags:   菲律宾旅游通话流量套餐 GLOBE，Smart
+title:       旅游通话流量套餐GLOBE，Smart
+tags:   菲律宾通信，菲律宾流量套餐 GLOBE，Smart，马尼拉流量套餐
 no-post-nav: true
-category: lif
+category: life
 tags: [life]
-excerpt: 菲律宾旅游通话流量套餐 GLOBE，Smart
+excerpt: 菲律宾旅游通话GLOBE，Smart流量套餐
 ---
 
 # 菲律宾GLOBE电话套餐，2018新鲜出炉!
