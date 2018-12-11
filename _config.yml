@@ -65,13 +65,17 @@ navs:
     label: Home
 
   -
-    href: /spring-boot.html
-    label: Spring-Boot
-
+    href: /jvm.html
+    label: JVM
+    
   -
-    href: /spring-cloud.html
-    label: Spring-Cloud
-
+    href: /data-structure.html
+    label: 数据结构
+    
+  -
+    href: /system-scurity.html
+    label: 系统安全
+    
   -
     href: /archives.html
     label: Archives
@@ -91,24 +95,30 @@ labels:
   -
     href: #
     name: 资源
+
   -
     href: /novel.html
     name: 小说
+    
   -
     href: /life.html
-    name: 追光的蜗牛
-
-  -
-    href: /arch.html
-    name: 架构
+    name: 生活
     
   -
     href: /jvm.html
     name: JVM
-
- # -
- #   href: /fastdfs.html
- #  name: FastDFS
+    
+  -
+    href: /spring-boot.html
+    label: Spring-Boot
+    
+  -
+    href: /spring-cloud.html
+    label: Spring-Cloud
+    
+  -
+    href: /data-structure.html
+    name: 数据结构
 
   -
     href: /mongodb.html
@@ -116,7 +126,11 @@ labels:
   -
     href: /internet_of_things.html
     name: 物联网
-
+    
+  -
+    href: /arch.html
+    name: 架构师 
+    
   -
     href: /open-source.html
     name: Code   
@@ -127,11 +141,12 @@ classes:
   -
     href: /life.html
     name: 追光的蜗牛
-    describe: 爱讲故事的蜗牛
+    describe: 处处留心皆学问，人情练达即文章
   -
     href: /novel.html
     name: 我的小说
     describe: 人总要有点梦想，不然和咸鱼有什么区别
+    
   -
     href: /arch.html
     name: 架构师之路
@@ -144,7 +159,23 @@ classes:
     href: /internet_of_things.html
     name: 物联网
     describe: 连接你我，连接世界
-
+    
+  -
+    href: /spring-boot.html
+    name: Spring-Boot
+    describe: 最优秀的微服务解决方案落地产品，没有之一  
+  -
+    href: /spring-cloud.html
+    name: Spring-Cloud
+    describe: 微服务架构服务治理解决方案
+  -
+    href: /data-structure.html
+    name: 数据结构
+    describe: 程序 = 算法　+　数据结构
+  -
+    href: /data-structure.html
+    name: 网络协议
+    describe: 人类社会需要道德法律，计算机网络也需要网络协议
 # ---------------- #
 #       RSS        #
 # ---------------- #
