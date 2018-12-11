@@ -114,7 +114,7 @@ Creative Commons（CC）的许可证不太开放源代码授权，它们通常�
 
 `商业软件的使用要遵从CC协议的具体规定，最严格的许可证将是“署名，非商业，不能修改”的授权。这意味着你可以自由 共享的工作，但不能改变它，你必须把它归功于原创者。`
 
- ## Common Public License 1.0
+## Common Public License 1.0
 
 Common许可证有一些细节性的规定值得参考:
 
