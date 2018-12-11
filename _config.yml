@@ -110,11 +110,11 @@ labels:
     
   -
     href: /spring-boot.html
-    label: Spring-Boot
+    name: Spring-Boot
     
   -
     href: /spring-cloud.html
-    label: Spring-Cloud
+    name: Spring-Cloud
     
   -
     href: /data-structure.html
@@ -123,13 +123,22 @@ labels:
   -
     href: /mongodb.html
     name: MongoDB
-  -
-    href: /internet_of_things.html
-    name: 物联网
     
   -
+    href: /redis.html
+    name: Redis
+  
+  -
     href: /arch.html
-    name: 架构师 
+    name: 架构师
+    
+  -
+    href: /big-data.html
+    name: 大数据   
+    
+  -
+    href: /internet_of_things.html  
+    name: 物联网
     
   -
     href: /open-source.html
@@ -151,6 +160,7 @@ classes:
     href: /arch.html
     name: 架构师之路
     describe: 架构师的自我修养
+    
   -
     href: /jvm.html
     name: Jvm系列文章
@@ -164,6 +174,7 @@ classes:
     href: /spring-boot.html
     name: Spring-Boot
     describe: 最优秀的微服务解决方案落地产品，没有之一  
+    
   -
     href: /spring-cloud.html
     name: Spring-Cloud
@@ -172,10 +183,12 @@ classes:
     href: /data-structure.html
     name: 数据结构
     describe: 程序 = 算法　+　数据结构
+    
   -
-    href: /data-structure.html
+    href: /protocol.html
     name: 网络协议
-    describe: 人类社会需要道德法律，计算机网络也需要网络协议
+    describe: 网络可以畅通无阻就是因为协议的存在
+    
 # ---------------- #
 #       RSS        #
 # ---------------- #
