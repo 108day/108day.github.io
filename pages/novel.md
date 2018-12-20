@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 追光的蜗牛
+title: 小说-人生缩影
 titlebar: novel
 subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 刀光剑影，爱恨情仇，纵横捭阖，睥睨天下，人生百态，尽在其中
 menu: novel

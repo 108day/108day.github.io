@@ -9,7 +9,7 @@ permalink: /blog
 ---
 
 
-# 收集的视频
+# 我的收藏
 
 ## spring boot 
 
