@@ -44,7 +44,6 @@ tags: [springboot]
 ```
 
 然后再配置eclipse的maven 配置：设置Global setting 和 User setting 一致
-
 ![enter description here][2]
 
 然后就可以可以看到eclipse右下角在下载maven依赖包了
@@ -249,7 +248,6 @@ https://blog.csdn.net/gebitan505/article/details/55050601
 
 
   [1]: ./images/1545730339167.jpg "1545730339167.jpg"
-  [2]: ./images/1545731079291.jpg "1545731079291.jpg"
+  [2]: ./images/1545793803943.jpg "1545793803943.jpg"
   [3]: ./images/1545733431958.jpg "1545733431958.jpg"
   [4]: ./images/1545792035163.jpg "1545792035163.jpg"
-  [5]: ./images/1545789349444.jpg "1545789349444.jpg"
