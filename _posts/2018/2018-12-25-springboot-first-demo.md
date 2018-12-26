@@ -128,15 +128,10 @@ public class User implements Serializable {
      /**省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象*/
 ```
 
-<<<<<<< HEAD
-   
  #### 新建dao接口
- 
-=======
-    //省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象
- ```
+
 ### 新建dao接口
->>>>>>> 1ce9d054ea667c1fd34df797d29d711d76e894ff
+
  ```
  public interface UserRepository extends JpaRepository<User, Long> {
 
