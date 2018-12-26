@@ -32,15 +32,15 @@ tags: [springboot]
  导入之前 需要的环境 JDK1.8, Maven 3.x
 > 可能出现的问题：
 导入之后maven会自动去本地maven仓库去找配置所需的依赖，如果本地没有找到，就会远程去中央仓库去找，一般不修改远程仓库的话，是国外的，下载速度很慢，而导致项目依赖不到jar包，项目就会有报错信息。
-所以我们要修改maven默认去找的远程仓库，改为国内的镜像库阿里的，在maven安装目录中，例如：apache-maven-3.1.1/conf/setting.xml 中 ，找到 <mirrors></mirrors> ，添加如下
-```xml
+所以我们要修改maven默认去找的远程仓库，改为国内的镜像库阿里的，在maven安装目录中，例如：apache-maven-3.1.1/conf/setting.xml 中 ，找到 <mirrors></mirrors> ，添加如下:
+
+```
 <mirror>
      <id>alimaven</id>
      <mirrorOf>central</mirrorOf>
      <name>aliyun maven</name>
      <url>http://maven.aliyun.com/nexus/content/repositories/central/</url>
 </mirror>
-    
 ```
 
 然后再配置eclipse的maven 配置：设置Global setting 和 User setting 一致
