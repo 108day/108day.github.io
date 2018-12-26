@@ -128,15 +128,8 @@ public class User implements Serializable {
      /**省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象*/
 ```
 
-<<<<<<< HEAD
-   
- #### 新建dao接口
- 
-=======
-    //省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象
- ```
 ### 新建dao接口
->>>>>>> 1ce9d054ea667c1fd34df797d29d711d76e894ff
+
  ```
  public interface UserRepository extends JpaRepository<User, Long> {
 
@@ -274,8 +267,8 @@ public class User implements Serializable {
 - [错误Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)](https://stackoverflow.com/questions/41318005/how-to-locate-thymeleaf-template-from-spring-boot) 根本原因是ideal缓存，用eclipse重新打开下项目就好了，代码基本没有改动。
 
 
-  [1]: ./images/1545730339167.jpg "1545730339167.jpg"
-  [2]: ./images/1545793803943.jpg "1545793803943.jpg"
-  [3]: ./images/1545733431958.jpg "1545733431958.jpg"
-  [4]: ./images/1545802241445.jpg "1545802241445.jpg"
-  [5]: ./images/1545802324508.jpg "1545802324508.jpg"
+  [1]: /assets/images/2018/springboot/2pc.png "2pc.png"
+  [2]: /assets/images//images/1545793803943.jpg "1545793803943.jpg"
+  [3]: /assets/images//images/1545733431958.jpg "1545733431958.jpg"
+  [4]: /assets/images//images/1545802241445.jpg "1545802241445.jpg"
+  [5]: /assets/images//images/1545802324508.jpg "1545802324508.jpg"
