@@ -145,7 +145,7 @@ public class User implements Serializable {
  源码:
  ![enter description here][3]
  
- ### application.yml 中配置JPA
+### application.yml 中配置JPA
  想要接口可以连接到数据库，前提是你要先创建一个数据库，我创建了一个demo 数据库
  配置如下：
  ```
@@ -170,7 +170,8 @@ public class User implements Serializable {
 - update：最常用的属性，第一次加载hibernate时根据model类会自动建立起表的结构（前提是先建立好数据库），以后加载hibernate时根据 model类自动更新表结构，即使表结构改变了但表中的行仍然存在不会删除以前的行。要注意的是当部署到服务器后，表结构是不会被马上建立起来的，是要等 应用第一次运行起来后才会。
 - validate ：每次加载hibernate时，验证创建数据库表结构，只会和数据库中的表进行比较，不会创建新表，但是会插入新值。
 
-然后启动，因为我们已经连接了数据库，所以需要数据源，所以需要把之前启动类的注解还原。也就是去掉之前添加的 (exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})  然后再启动就可以了。
+接下来开始启动，因为我们已经连接了数据库，所以需要数据源，所以需要把之前启动类的注解还原。
+也就是去掉之前添加的(exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})  然后再启动就可以了。
 因为没有数据，所以写个单元测试测试下:
 
 ```java
@@ -198,12 +199,15 @@ public class User implements Serializable {
 ```
 
 测试结果截图：
-![enter description here][4]
+
+![enter description here][4] 
 
 ## 集成Thymeleaf
-> Thymeleaf ：前端渲染引擎和JSP，Freemarker类似 项目生成之时已经引入了maven 配置，在此就不多说
+
+Thymeleaf ：前端渲染引擎和JSP，Freemarker类似 项目生成之时已经引入了maven 配置，在此就不多说
 
 新建一个方法：
+
  ```java
        /**
      * 查询所用用户
@@ -268,7 +272,7 @@ public class User implements Serializable {
 
 
   [1]: /assets/images/2018/springboot/springboot-install-1.png "springboot-install-1.png"
-  [2]: /assets/images/2018/springboot/springboot-install-5.png "springboot-install-5.png"
-  [3]: /assets/images/2018/springboot/springboot-install-2.png "springboot-install-2.png"
-  [4]: /assets/images/2018/springboot/springboot-install-3.png "springboot-install-3.png"
-  [5]: /assets/images/2018/springboot/springboot-install-4.png "springboot-install-4.png"
+  [2]: /assets/images/2018/springboot/springboot-install-2.png "springboot-install-2.png"
+  [3]: /assets/images/2018/springboot/springboot-install-3.png "springboot-install-3.png"
+  [4]: /assets/images/2018/springboot/springboot-install-4.png "springboot-install-4.png"
+  [5]: /assets/images/2018/springboot/springboot-install-5.png "springboot-install-5.png"
