@@ -5,7 +5,7 @@ category: springboot
 tags: [springboot]
 ---
 
-# SpringBoot 是什么？
+# What SpringBoot？
  养成良好的学习习惯，对于概念，理解类的疑惑首先去官网看看，不懂英文的可以用百度，网易等翻译工具看，下面我们看[官网](https://spring.io/)对SpringBoot 的解释：
 > Spring Boot is designed to get you up and running as quickly as possible,with minimal upfront configuration of Spring. Spring Boot takes an opinionated view of building production-ready applications.
 
@@ -15,16 +15,15 @@ tags: [springboot]
 
 其实之前的SSH,SSM等框架我们也可以自己配置好一个项目，然后作为模板来用，以后开发的时候就可以直接拿过来修改就行，这样提高开发速度，不用再创建，配置，构建等等。Docker自动化快速构建部署环境，mybatis generator 自动生成代码 ，都是为了节省一些体力活，如是而已。工欲善其事，必先利其器。
 
-## 为什么要用SpringBoot ?
+## 为什么要用SpringBoot?
 - 快速启动，部署，开发
 - 可以快速集成很多第三方的模块，灵活配置
 - 和spring,spring mvc 一脉相承
 - 最好的微服务落地框架，并且有服务治理 springcloud 架构配合，优势大于弱势
 - 基于以上的优点，很多企业都在使用，大势所趋，不学不行
-## SpringBoot怎么用？
-	不废话了，开始上手
+
 ## 创建一个SpringBoot的项目
-	去官网创建一个demo先，地址：https://start.spring.io/   如下图所示：
+不废话了，开始上手,直接去官网创建一个demo先，地址：https://start.spring.io/   如下图所示：
 ![enter description here][1]
 
 以上就是需要的maven依赖，在springboot 页面搜索，或者勾选，最后 点击 Generate Project ，会下载demo到本地，然后解压并导入到IDE中。
@@ -50,6 +49,7 @@ tags: [springboot]
 idea 同理，配置就不在这里讲解了。
 
 ### 创建Controller
+
 项目导入到IDE 正常后 ，我们就可以开始我们的Coding旅程了，SpringBoot 说它部署，启动速度很快，我们就来看看到底有多快。
 
 在com.example.demo下面 新建 包 controller ，再包中新建类 DemoController.java 代码如下：
@@ -79,7 +79,8 @@ public class DemoController {
     
 ```
 ### 测试DemoController
- 启动 springboot 
+
+启动 springboot 
 我们没有连接数据库，但是又依赖了mysql的jar包，所以要指定排除数据源连接的方式启动
     修改：DemoApplication.java  在启动类的注解后面加 (exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class}) 修改后代码如下：
     
