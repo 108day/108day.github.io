@@ -244,11 +244,20 @@ Thymeleaf ：前端渲染引擎和JSP，Freemarker类似 项目生成之时已�
 
 最后附上[GIt源代码地址](https://github.com/108day/springboot-examples)  项目名称：springboot-jpa-thymeleaf
 
+> 本着开源分享的心态，对于参考过的文章，代码都尽量在下面了，可能会有遗漏，如果代码引用中有版权问题，请联系我修改！
+
 # 参考文章
-http://www.ityouknow.com/springboot/2017/09/23/spring-boot-jpa-thymeleaf-curd.html
-http://www.ityouknow.com/springboot/2016/02/03/spring-boot-web.html
-https://www.cnblogs.com/nicknailo/p/8947643.html
-https://blog.csdn.net/gebitan505/article/details/55050601
+- [springboot:web综合开发](http://www.ityouknow.com/springboot/2016/02/03/spring-boot-web.html)
+- [springboot+jpa+thymeleaf增删改查示例](http://www.ityouknow.com/springboot/2017/09/23/spring-boot-jpa-thymeleaf-curd.html)
+- [springboot+maven+thymeleaf配置实战demo](https://www.cnblogs.com/nicknailo/p/8947643.html)
+- [报错 Invalid character found in method name. HTTP method names must be tokens](https://stackoverflow.com/questions/38891866/when-spring-boot-startup-throw-out-the-method-names-must-be-tokens-exception) ：不是缓存问题，缓存错误提示只是表象，根本原因是配置文件错误
+-  [报错 Invalid character found in method name. HTTP method names must be tokens](https://www.cnblogs.com/breath-taking/articles/6070046.html) 同上，不是缓存问题，缓存错误提示只是表象，根本原因是配置文件错误
+- [spring boot的 yml和properties的对比](https://www.cnblogs.com/dyh-air/articles/9090882.html)
+- [错误Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)](https://stackoverflow.com/questions/41318005/how-to-locate-thymeleaf-template-from-spring-boot) 根本原因是ideal缓存，用eclipse重新打开下项目就好了，代码基本没有改动。
+
+
+
+
 
 
   [1]: ./images/1545730339167.jpg "1545730339167.jpg"
