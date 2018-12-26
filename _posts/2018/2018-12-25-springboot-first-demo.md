@@ -267,7 +267,7 @@ public class User implements Serializable {
 - [错误Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)](https://stackoverflow.com/questions/41318005/how-to-locate-thymeleaf-template-from-spring-boot) 根本原因是ideal缓存，用eclipse重新打开下项目就好了，代码基本没有改动。
 
 
-  [1]: /assets/images/2018/springboot/2pc.png "2pc.png"
+  [1]: /assets/images/2018/springboot/springboot-install-1.png "springboot-install-1.png"
   [2]: /assets/images//images/1545793803943.jpg "1545793803943.jpg"
   [3]: /assets/images//images/1545733431958.jpg "1545733431958.jpg"
   [4]: /assets/images//images/1545802241445.jpg "1545802241445.jpg"
