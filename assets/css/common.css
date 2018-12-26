@@ -236,10 +236,11 @@
 }
 
 .markdown-body img {
-    max-width: 600px; 
+    width: 850px; 
     height: auto;
     display: block;
     margin: 0 auto;
+	margin:10px 5px;
 }
 @media (max-width: 640px){
     .markdown-body img{
