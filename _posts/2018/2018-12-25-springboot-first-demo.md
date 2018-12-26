@@ -305,4 +305,4 @@ Thymeleaf ：前端渲染引擎和JSP，Freemarker类似 项目生成之时已�
   [3]: /assets/images/2018/springboot/springboot-install-3.png "springboot-install-3.png"
   [4]: /assets/images/2018/springboot/springboot-install-4.png "springboot-install-4.png"
   [5]: /assets/images/2018/springboot/springboot-install-5.png "springboot-install-5.png"
-  [6]: /assets/images/2018/springboot/springboot-install-5.png "springboot-install-6.png"
+  [6]: /assets/images/2018/springboot/springboot-install-6.png "springboot-install-6.png"
