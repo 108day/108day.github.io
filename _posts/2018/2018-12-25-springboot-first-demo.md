@@ -268,7 +268,7 @@ public class User implements Serializable {
 
 
   [1]: /assets/images/2018/springboot/springboot-install-1.png "springboot-install-1.png"
-  [2]: /assets/images//images/1545793803943.jpg "1545793803943.jpg"
-  [3]: /assets/images//images/1545733431958.jpg "1545733431958.jpg"
-  [4]: /assets/images//images/1545802241445.jpg "1545802241445.jpg"
-  [5]: /assets/images//images/1545802324508.jpg "1545802324508.jpg"
+  [2]: /assets/images/2018/springboot/springboot-install-5.png "springboot-install-5.png"
+  [3]: /assets/images/2018/springboot/springboot-install-2.png "springboot-install-2.png"
+  [4]: /assets/images/2018/springboot/springboot-install-3.png "springboot-install-3.png"
+  [5]: /assets/images/2018/springboot/springboot-install-4.png "springboot-install-4.png"
