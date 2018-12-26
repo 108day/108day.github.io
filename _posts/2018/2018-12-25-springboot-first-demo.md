@@ -49,7 +49,7 @@ tags: [springboot]
 然后就可以可以看到eclipse右下角在下载maven依赖包了
 idea 同理，配置就不在这里讲解了。
 
-### 创建一个rest 风格的接口 DemoController
+### 创建Controller
 项目导入到IDE 正常后 ，我们就可以开始我们的Coding旅程了，SpringBoot 说它部署，启动速度很快，我们就来看看到底有多快。
 
 在com.example.demo下面 新建 包 controller ，再包中新建类 DemoController.java 代码如下：
@@ -128,7 +128,7 @@ public class User implements Serializable {
      /**省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象*/
 ```
 
-### 新建dao接口
+### 新建dao层
 
  ```
  public interface UserRepository extends JpaRepository<User, Long> {
@@ -144,9 +144,31 @@ public class User implements Serializable {
  还有很多已经实现的方法，比如：findAll()， 可以直接反编译看源码，就知道他提供了什么默认接口了。
  源码:
  ![enter description here][3]
-### 新建service接口 
+### 新建service层
+接口：
 ```java
+public interface IUserRepositoryService{
 
+    /**
+     * 服务一般都写在service层
+     * findAll方法名随便起的，和JPA没有关系
+     */
+    public List<User> findAll();
+
+}
+```
+实现：
+```java
+@Service("userRepositoryService")
+public class UserRepositoryServiceImpl implements IUserRepositoryService {
+
+    @Autowired
+    private UserRepository userRepository;
+
+    public List<User> findAll(){
+        return userRepository.findAll();
+    }
+}
 ```
 ### application.yml 中配置JPA
  想要接口可以连接到数据库，前提是你要先创建一个数据库，我创建了一个demo 数据库
