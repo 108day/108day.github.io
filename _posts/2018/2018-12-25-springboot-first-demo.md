@@ -5,7 +5,7 @@ category: springboot
 tags: [springboot]
 ---
 
-# SpringBoot 是什么？
+## SpringBoot 是什么？
  养成良好的学习习惯，对于概念，理解类的疑惑首先去官网看看，不懂英文的可以用百度，网易等翻译工具看，下面我们看[官网](https://spring.io/)对SpringBoot 的解释：
 > Spring Boot is designed to get you up and running as quickly as possible,with minimal upfront configuration of Spring. Spring Boot takes an opinionated view of building production-ready applications.
 
@@ -15,15 +15,15 @@ tags: [springboot]
 
 其实之前的SSH,SSM等框架我们也可以自己配置好一个项目，然后作为模板来用，以后开发的时候就可以直接拿过来修改就行，这样提高开发速度，不用再创建，配置，构建等等。Docker自动化快速构建部署环境，mybatis generator 自动生成代码 ，都是为了节省一些体力活，如是而已。工欲善其事，必先利其器。
 
-# 为什么要用SpringBoot ?
+## 为什么要用SpringBoot ?
 - 快速启动，部署，开发
 - 可以快速集成很多第三方的模块，灵活配置
 - 和spring,spring mvc 一脉相承
 - 最好的微服务落地框架，并且有服务治理 springcloud 架构配合，优势大于弱势
 - 基于以上的优点，很多企业都在使用，大势所趋，不学不行
-# SpringBoot 怎么用？
+## SpringBoot 怎么用？
 	不废话了，开始上手
-## 创建一个SpringBoot 的项目
+### 创建一个SpringBoot 的项目
 	去官网创建一个demo先，地址：https://start.spring.io/   如下图所示：
 ![enter description here][1]
 
@@ -49,9 +49,9 @@ tags: [springboot]
 然后就可以可以看到eclipse右下角在下载maven依赖包了
 idea 同理，配置就不在这里讲解了。
 
-### 创建一个DemoController
+#### 创建一个DemoController
 项目导入到IDE 正常后 ，我们就可以开始我们的Coding旅程了，SpringBoot 说它部署，启动速度很快，我们就来看看到底有多快。
-### 创建一个rest 风格的接口
+#### 创建一个rest 风格的接口
 在com.example.demo下面 新建 包 controller ，再包中新建类 DemoController.java 代码如下：
 ```java
 package com.example.demo.controller;
@@ -78,7 +78,7 @@ public class DemoController {
     }
     
 ```
-### 测试DemoController
+#### 测试DemoController
  启动 springboot 
 我们没有连接数据库，但是又依赖了mysql的jar包，所以要指定排除数据源连接的方式启动
     修改：DemoApplication.java  在启动类的注解后面加 (exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class}) 修改后代码如下：
@@ -104,9 +104,9 @@ server:
     servlet:
       context-path: /admin  #上下文访问路径 
 ```
-## 集成JPA
+### 集成JPA
  之前我们创建项目的时候jar包已经依赖了，这里就不说明了
-### 新建entity 实体
+#### 新建entity 实体
  ```
  @Entity
 public class User implements Serializable {
@@ -128,7 +128,7 @@ public class User implements Serializable {
      /**省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象*/
 ```
 
-### 新建dao接口
+#### 新建dao接口
 
  ```
  public interface UserRepository extends JpaRepository<User, Long> {
@@ -145,7 +145,7 @@ public class User implements Serializable {
  源码:
  ![enter description here][3]
  
-### application.yml 中配置JPA
+#### application.yml 中配置JPA
  想要接口可以连接到数据库，前提是你要先创建一个数据库，我创建了一个demo 数据库
  配置如下：
  ```
@@ -202,7 +202,7 @@ public class User implements Serializable {
 
 ![enter description here][4] 
 
-## 集成Thymeleaf
+### 集成Thymeleaf
 
 Thymeleaf ：前端渲染引擎和JSP，Freemarker类似 项目生成之时已经引入了maven 配置，在此就不多说
 
@@ -247,7 +247,7 @@ Thymeleaf ：前端渲染引擎和JSP，Freemarker类似 项目生成之时已�
 结果截图如下：
 ![enter description here][5]
 
-# 总结
+## 总结
 - IDE的缓存问题。刚开始用ideal ，结果最后一直找不到 templates下的模板，看了很多的文章，有的说是配置问题，有的说是模板问题，最后我引用eclipse重新测试就可以了
 - 配置application.yml 的问题。之前用的application.properties，然后就想知道这两种的区别，然后就换了.yml的文件，发现就是 把properties 中的"." 用冒号：换行，要注意缩进，然后把等号 变为 冒号 ： 加空格 ，再把值跟在后面。但是配置过程还是有些不一样，因为最后一个点，在把properties是驼峰设计，在yml中是 - 相连，都是小写。缩进不对，缺少空格，都不行，配置检查都不会过。两种配置文件一起使用，有限读取.yml配置文件，这个你测试代码时就知道。
 - [配置文件不正确问题](https://stackoverflow.com/questions/38891866/when-spring-boot-startup-throw-out-the-method-names-must-be-tokens-exception) 看了好几篇文章，结果说的根本不对，不是因为tomcat缓冲区的问题，还是因为读取配置文件出错，而导致tomcat报错，解决的根本还是重新检查配置文件。从配置文件易用性来说，传统的.properties 文件容易配置，从阅读的方便直观角度来看.yml 配置文件比较易读性更好。可以根据自己的需要取舍。
@@ -261,7 +261,7 @@ Thymeleaf ：前端渲染引擎和JSP，Freemarker类似 项目生成之时已�
 
 > 本着开源分享的心态，对于参考过的文章，代码都尽量在下面了，可能会有遗漏，如果代码引用中有版权问题，请联系我修改！
 
-# 参考文章
+## 参考文章
 - [springboot:web综合开发](http://www.ityouknow.com/springboot/2016/02/03/spring-boot-web.html)
 - [springboot+jpa+thymeleaf增删改查示例](http://www.ityouknow.com/springboot/2017/09/23/spring-boot-jpa-thymeleaf-curd.html)
 - [springboot+maven+thymeleaf配置实战demo](https://www.cnblogs.com/nicknailo/p/8947643.html)
