@@ -128,8 +128,15 @@ public class User implements Serializable {
      /**省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象*/
 ```
 
+<<<<<<< HEAD
+   
+ #### 新建dao接口
+ 
+=======
+    //省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象
+ ```
 ### 新建dao接口
-
+>>>>>>> 1ce9d054ea667c1fd34df797d29d711d76e894ff
  ```
  public interface UserRepository extends JpaRepository<User, Long> {
 
@@ -180,19 +187,29 @@ public class User implements Serializable {
 	@Test
 	public void test() throws Exception {
 		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG);        
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG);
 		String formattedDate = dateFormat.format(date);
-		
-		userRepository.save(new User("张三", "123@126.com", "123", "123",formattedDate));
-		userRepository.save(new User("李思", 456@126.com", "456", "123",formattedDate));
-		userRepository.save(new User("秦始皇", "789@126.com", "789", "123",formattedDate));
-
-		userRepository.delete(userRepository.findByUserName("123"));
+		userRepository.deleteAll();
+		List<User> list = userRepository.findAll();
+		if(list==null || list.size()==0) {
+			System.out.println(String.format("====================>%s","保存"));
+			userRepository.save(new User("沈万三", "123@126.com", "123", "123", formattedDate));
+			userRepository.save(new User("唐明皇", "456@126.com", "456", "456", formattedDate));
+			userRepository.save(new User("秦始皇", "789@126.com", "789", "789", formattedDate));
+		}
+		List<User> result = userRepository.findAll();
+		for(User user:result){
+			System.out.println(String.format("====================>%s,%s,%s",user.getUserName(),user.getEmail(),user.getNickName()));
+		}
 	}
 ```
 
+测试结果截图：
+![enter description here][4]
+
 ## 集成Thymeleaf
 > Thymeleaf ：前端渲染引擎和JSP，Freemarker类似 项目生成之时已经引入了maven 配置，在此就不多说
+
 新建一个方法：
  ```java
        /**
@@ -208,6 +225,7 @@ public class User implements Serializable {
  ```
     
  在templates 下面 创建 list.html
+ 
 ``` html
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
@@ -228,8 +246,9 @@ public class User implements Serializable {
 </body>
 </html>
 ```
-结果如下：
-![enter description here][4]
+
+结果截图如下：
+![enter description here][5]
 
 # 总结
 - IDE的缓存问题。刚开始用ideal ，结果最后一直找不到 templates下的模板，看了很多的文章，有的说是配置问题，有的说是模板问题，最后我引用eclipse重新测试就可以了
@@ -255,11 +274,8 @@ public class User implements Serializable {
 - [错误Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)](https://stackoverflow.com/questions/41318005/how-to-locate-thymeleaf-template-from-spring-boot) 根本原因是ideal缓存，用eclipse重新打开下项目就好了，代码基本没有改动。
 
 
-
-
-
-
   [1]: ./images/1545730339167.jpg "1545730339167.jpg"
   [2]: ./images/1545793803943.jpg "1545793803943.jpg"
   [3]: ./images/1545733431958.jpg "1545733431958.jpg"
-  [4]: ./images/1545792035163.jpg "1545792035163.jpg"
+  [4]: ./images/1545802241445.jpg "1545802241445.jpg"
+  [5]: ./images/1545802324508.jpg "1545802324508.jpg"
