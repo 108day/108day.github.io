@@ -282,13 +282,13 @@ Thymeleaf ：前端渲染引擎和JSP，Freemarker类似 项目生成之时已�
 - [配置文件不正确问题](https://stackoverflow.com/questions/38891866/when-spring-boot-startup-throw-out-the-method-names-must-be-tokens-exception) 看了好几篇文章，结果说的根本不对，不是因为tomcat缓冲区的问题，还是因为读取配置文件出错，而导致tomcat报错，解决的根本还是重新检查配置文件。从配置文件易用性来说，传统的.properties 文件容易配置，从阅读的方便直观角度来看.yml 配置文件比较易读性更好。可以根据自己的需要取舍。
 - 返回对象是ModelAndView时，页面展示时的问题。具体看list.html的[Thymeleaf表达式 ](https://www.thymeleaf.org/doc/tutorials/3.0/thymeleafspring.html#basic-configuration)
 
-从整个项目的搭建过程中可以看出来，相比以前写一个SpringMvc的工程是简便了非常多，而且因为配置大量减少，都集中在一个配置文件中的缘故，使用时更容易成功搭建项目，报错之后更容易定位错误位置。
+从整个项目的搭建过程中可以看出来，相比以前写一个SpringMvc的工程是简便了非常多，不过也还是遵循SpringMVC的开发模式。而且因为配置大量减少，且集中在一个配置文件中，这使得项目搭建更容易成功，报错之后更容易定位错误位置。
 
 [Thymeleaf官网文档](https://www.thymeleaf.org/doc/tutorials/3.0/thymeleafspring.html#basic-configuration)
 
 [本项目源代码地址](https://github.com/108day/springboot-examples)  项目名称：springboot-jpa-thymeleaf
 
-> 本着开源分享的心态，对于参考过的文章，代码都尽量在下面了，如果有版权问题，请联系我修改！
+> 本着开源分享的心态，对于参考过的文章、代码等都尽量在下面了，如果有版权问题，请联系我修改！
 
 ## 参考文章
 - [springboot:web综合开发](http://www.ityouknow.com/springboot/2016/02/03/spring-boot-web.html)
