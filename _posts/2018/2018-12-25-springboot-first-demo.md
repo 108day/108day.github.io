@@ -126,10 +126,12 @@ public class User implements Serializable {
     private String nickName;
     @Column(nullable = false)
     private String regTime;
+     /**省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象*/
+```
 
-    //省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象
-   ```
+   
  #### 新建dao接口
+ 
  ```
  public interface UserRepository extends JpaRepository<User, Long> {
 
@@ -137,7 +139,9 @@ public class User implements Serializable {
 
     User findByUserNameOrEmail(String username, String email);
 }
+
  ```
+ 
  因为JPA是根据方法可以自动生成相对应的SQL，所以不用实现接口，接口只需要集成JpaRespository 即可
  还有很多已经实现的方法，比如：findAll()， 可以直接反编译看源码，就知道他提供了什么默认接口了。
  源码:
