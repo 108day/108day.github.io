@@ -128,8 +128,6 @@ public class User implements Serializable {
      /**省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象*/
 ```
 
- #### 新建dao接口
-
 ### 新建dao接口
 
  ```
