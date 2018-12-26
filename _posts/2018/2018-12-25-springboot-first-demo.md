@@ -78,7 +78,6 @@ public class DemoController {
     }
     
 ```
-
 ### 测试DemoController
  启动 springboot 
 我们没有连接数据库，但是又依赖了mysql的jar包，所以要指定排除数据源连接的方式启动
@@ -107,7 +106,7 @@ server:
 ```
 ## 集成JPA
  之前我们创建项目的时候jar包已经依赖了，这里就不说明了
-#### 新建entity 实体
+### 新建entity 实体
  ```
  @Entity
 public class User implements Serializable {
@@ -129,9 +128,15 @@ public class User implements Serializable {
      /**省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象*/
 ```
 
+<<<<<<< HEAD
    
  #### 新建dao接口
  
+=======
+    //省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象
+ ```
+### 新建dao接口
+>>>>>>> 1ce9d054ea667c1fd34df797d29d711d76e894ff
  ```
  public interface UserRepository extends JpaRepository<User, Long> {
 
@@ -147,7 +152,7 @@ public class User implements Serializable {
  源码:
  ![enter description here][3]
  
- #### application.yml 中配置JPA
+ ### application.yml 中配置JPA
  想要接口可以连接到数据库，前提是你要先创建一个数据库，我创建了一个demo 数据库
  配置如下：
  ```
@@ -166,14 +171,15 @@ public class User implements Serializable {
           auto: update # 常用属性；作用：第一次启动访问后，会根据entity 注解配置创建表，后面再次启动时只对比数据库更新，不创建，也不删除原有数据
     show-sql: true  # 是否打印SQL
  ```
- 这里重点说下，Hibernate的自动生成数据库表结构的策略 auto: update 参数
+> 这里重点说下，Hibernate的自动生成数据库表结构的策略 auto: update 参数
 -  create : 自动创建|更新|验证数据库表结构
 - create-drop : 每次加载hibernate时根据model类生成表，但是sessionFactory一关闭,表就自动删除
 - update：最常用的属性，第一次加载hibernate时根据model类会自动建立起表的结构（前提是先建立好数据库），以后加载hibernate时根据 model类自动更新表结构，即使表结构改变了但表中的行仍然存在不会删除以前的行。要注意的是当部署到服务器后，表结构是不会被马上建立起来的，是要等 应用第一次运行起来后才会。
 - validate ：每次加载hibernate时，验证创建数据库表结构，只会和数据库中的表进行比较，不会创建新表，但是会插入新值。
 
 然后启动，因为我们已经连接了数据库，所以需要数据源，所以需要把之前启动类的注解还原。也就是去掉之前添加的 (exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})  然后再启动就可以了。
-因为没有数据，所以写个单元测试测试下
+因为没有数据，所以写个单元测试测试下:
+
 ```java
 @Autowired
 	private UserRepository userRepository;
@@ -193,7 +199,7 @@ public class User implements Serializable {
 ```
 
 ## 集成Thymeleaf
-Thymeleaf ：前端渲染引擎和JSP，Freemarker类似 项目生成之时已经引入了maven 配置，在此就不多说
+> Thymeleaf ：前端渲染引擎和JSP，Freemarker类似 项目生成之时已经引入了maven 配置，在此就不多说
 新建一个方法：
  ```java
        /**
