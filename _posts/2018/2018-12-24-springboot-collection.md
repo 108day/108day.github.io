@@ -50,15 +50,7 @@ tags: [springboot]
 
 - [spring boot官方例子](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples)
 
-- [spring-boot-examples](https://github.com/ityouknow/spring-boot-examples)
-
-- [SpringBoot-Learning](https://github.com/dyc87112/SpringBoot-Learning)
-
-- [favorites-web](https://github.com/cloudfavorites/favorites-web)
-
-- [springboot-learning-example](https://github.com/JeffLi1993/springboot-learning-example)
-
-- [spring-boot-all](https://github.com/leelance/spring-boot-all)
+- [springboot-examples](https://github.com/108day/springboot-examples)
 
 
 
