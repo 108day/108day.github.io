@@ -286,9 +286,9 @@ Thymeleaf ：前端渲染引擎和JSP，Freemarker类似 项目生成之时已�
 
 [Thymeleaf官网文档](https://www.thymeleaf.org/doc/tutorials/3.0/thymeleafspring.html#basic-configuration)
 
-最后附上[GIt源代码地址](https://github.com/108day/springboot-examples)  项目名称：springboot-jpa-thymeleaf
+[本项目源代码地址](https://github.com/108day/springboot-examples)  项目名称：springboot-jpa-thymeleaf
 
-> 本着开源分享的心态，对于参考过的文章，代码都尽量在下面了，可能会有遗漏，如果代码引用中有版权问题，请联系我修改！
+> 本着开源分享的心态，对于参考过的文章，代码都尽量在下面了，如果有版权问题，请联系我修改！
 
 ## 参考文章
 - [springboot:web综合开发](http://www.ityouknow.com/springboot/2016/02/03/spring-boot-web.html)
