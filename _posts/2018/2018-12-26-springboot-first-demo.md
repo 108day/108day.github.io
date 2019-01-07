@@ -13,7 +13,17 @@ tags: [springboot]
 
 按照我对这句话的理解就是：springboot 就是把需要我们自己可以灵活配置的地方或者说可以扩展的地方（必要的地方），给你组合了一种配置，默认给你配置好了，为的就是可以快速启动和运行，减小使用难度。
 
-其实之前的SSH,SSM等框架我们也可以自己配置好一个项目，然后作为模板来用，以后开发的时候就可以直接拿过来修改就行，这样提高开发速度，不用再创建，配置，构建等等。Docker自动化快速构建部署环境，mybatis generator 自动生成代码 ，都是为了节省一些体力活，如是而已。工欲善其事，必先利其器。
+springboot并不是什么新的技术，而是一种思想，一种理念。约定大于配置，默认大于配置，能不配置就不要配置，需要配置的地方我帮你配置好，就这样。
+其实这些事我们自己用之前的SSH,SSM等框架也可以做，自己配置好一个项目，如果你有源码的话，还可以打成一个包，然后作为模板来用，以后开发的时候就可以直接拿过来用，这样提高开发速度，不用再创建，配置，构建等等，springboot就是帮我们做完这些事，而且别人团队技术牛X，大咖很多，代码质量高，设计思想先进，我们直接用人家的就行。
+
+自动化是一种趋势，而且程序员对于偷懒有种特别的追求，比如：
+- Docker自动化快速构建部署环境（一劳永逸，不再担心多环境部署，加机器，一样的配置环境不一致等问题）
+- mybatis generator 自动生成代码（只要数据库有表，就可以给你生成对应的三层代码）
+- maven对jar包的管理（你不用再copy包到lib下）
+- JPA（根据接口方法名称自动生成对应的SQL，实现对数据库的操作）你自己也可以写很多很多的常用，重载方法，所有可能用到的方法一网打尽，并且持续添加场景，最后打成一个jar包，一劳永逸。
+……
+
+这些都是为了节省一些体力活，如是而已。工欲善其事，必先利其器。
 
 # 为什么要用SpringBoot?
 - 快速启动，部署，开发
@@ -31,7 +41,7 @@ tags: [springboot]
  导入之前 需要的环境 JDK1.8, Maven 3.x
 > 可能出现的问题：
 导入之后maven会自动去本地maven仓库去找配置所需的依赖，如果本地没有找到，就会远程去中央仓库去找，一般不修改远程仓库的话，是国外的，下载速度很慢，而导致项目依赖不到jar包，项目就会有报错信息。
-所以我们要修改maven默认去找的远程仓库，改为国内的镜像库阿里的，在maven安装目录中，例如：apache-maven-3.1.1/conf/setting.xml 中 ，找到 <mirrors></mirrors> ，添加如下:
+所以我们要修改maven默认去找的远程仓库，改为国内的镜像库阿里的，在maven安装目录中，例如：apache-maven-3.1.1/conf/setting.xml 中 ，找到 mirrors ，添加如下:
 
 ```
 <mirror>
@@ -126,7 +136,7 @@ public class User implements Serializable {
     private String nickName;
     @Column(nullable = false)
     private String regTime;
-     /**省略getter settet方法、构造方法，记得加上，不上查询数据库时不会有数据，返回的都是空对象*/
+     /**省略getter settet方法、构造方法，记得加上，否则查询数据库时不会有数据，返回的都是空对象*/
 ```
 
 ### 新建dao层
@@ -282,13 +292,13 @@ Thymeleaf ：前端渲染引擎和JSP，Freemarker类似 项目生成之时已�
 - [配置文件不正确问题](https://stackoverflow.com/questions/38891866/when-spring-boot-startup-throw-out-the-method-names-must-be-tokens-exception) 看了好几篇文章，结果说的根本不对，不是因为tomcat缓冲区的问题，还是因为读取配置文件出错，而导致tomcat报错，解决的根本还是重新检查配置文件。从配置文件易用性来说，传统的.properties 文件容易配置，从阅读的方便直观角度来看.yml 配置文件比较易读性更好。可以根据自己的需要取舍。
 - 返回对象是ModelAndView时，页面展示时的问题。具体看list.html的[Thymeleaf表达式 ](https://www.thymeleaf.org/doc/tutorials/3.0/thymeleafspring.html#basic-configuration)
 
-从整个项目的搭建过程中可以看出来，相比以前写一个SpringMvc的工程是简便了非常多，而且因为配置大量减少，都集中在一个配置文件中的缘故，使用时更容易成功搭建项目，报错之后更容易定位错误位置。
+从整个项目的搭建过程中可以看出来，相比以前写一个SpringMvc的工程是简便了非常多，不过也还是遵循SpringMVC的开发模式。而且因为配置大量减少，且集中在一个配置文件中，这使得项目搭建更容易成功，报错之后更容易定位错误位置。
 
 [Thymeleaf官网文档](https://www.thymeleaf.org/doc/tutorials/3.0/thymeleafspring.html#basic-configuration)
 
 [本项目源代码地址](https://github.com/108day/springboot-examples)  项目名称：springboot-jpa-thymeleaf
 
-> 本着开源分享的心态，对于参考过的文章，代码都尽量在下面了，如果有版权问题，请联系我修改！
+> 本着开源分享的心态，对于参考过的文章、代码等都尽量在下面了，如果有版权问题，请联系我修改！
 
 ## 参考文章
 - [springboot:web综合开发](http://www.ityouknow.com/springboot/2016/02/03/spring-boot-web.html)
