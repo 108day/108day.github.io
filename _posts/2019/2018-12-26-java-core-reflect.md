@@ -118,9 +118,9 @@ public class MapUtils extends HashMap<String, Object> {
     }
 }
 ```
-
+代码中使用的DateUtils工具类在[上一篇文章](https://108day.github.io/java/2018/12/26/java-core.html),也可以在[源码](https://github.com/108day/java-common-utils)中找到 
 使用反射虽然开始时会损失性能，但是如果这段代码经常被调用时就会被JVM自动生成热点代码，性能和其他代码没有什么区别。
 
 反射是框架的核心工具，掌握反射的API很有必要！
 
-更多的一些工具请看[开源代码](https://github.com/108day/java-common-utils)
+更多的一些工具请看[源码](https://github.com/108day/java-common-utils)
