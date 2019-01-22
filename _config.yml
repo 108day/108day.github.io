@@ -107,7 +107,9 @@ labels:
   -
     href: /jvm.html
     name: JVM
-    
+  -
+    href: /java.html
+    name: JAVA   
   -
     href: /spring-boot.html
     name: Spring-Boot
