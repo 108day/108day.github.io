@@ -9,10 +9,10 @@ tags: [java]
 ## 问题（Question）
 在使用springboot时，浏览器过来数据在后台接收时有几种注解配置的方式 
 
-`@PathVariable("currPage")`在url路径中，也就是问号前面 例如：www.thevil.com/admin/list/page/1/20?,其中 1,20作为分页参数，就是PathVariable参数
-`@RequestBody` 要求请求Content-type 必须是json 
-`@RequestParam（"name")`  这个就比较简单，直接就是对一个String,Long 等基本类型的参数
-`@RequestParam `  没有括号一般都是用Map接收 
+- `@PathVariable("currPage")`在url路径中，也就是问号前面 例如：www.thevil.com/admin/list/page/1/20?,其中 1,20作为分页参数，就是PathVariable参数
+- `@RequestBody` 要求请求Content-type 必须是json 
+- `@RequestParam（"name")`  这个就比较简单，直接就是对一个String,Long 等基本类型的参数
+- `@RequestParam `  没有括号一般都是用Map接收 
 
 当你需要写一个接口时，但是又不想使用@equestBody 建立一个POJO 时 ，一般都会选择@RequestParam 用Map接收参数。但是有时候又会有把Map转为POJO的需要，而且每个字段的值都不可以为空时，也就是对 对象的每个值都做非空判断 ，这时你有两个选择：
 - JO 的每个属性都单独拿出来进行 if else 判断
