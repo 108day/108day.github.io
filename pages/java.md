@@ -2,11 +2,11 @@
 layout: page
 title: JAVA 系列文章
 titlebar: java
-subtitle: <span class="mega-octicon octicon-flame"></span>&nbsp;&nbsp; Docker 系列教程
+subtitle: <span class="mega-octicon octicon-flame"></span>
 menu: java
 css: ['blog-page.css']
 permalink: /java
-keywords: java基础 学习,工具制作
+keywords: java基础学习
 ---
 
 <div class="row">
