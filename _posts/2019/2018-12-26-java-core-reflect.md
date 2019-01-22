@@ -6,7 +6,7 @@ category: java
 tags: [java] 
 ---
 
-## 问题（Question）
+## 描述（Description）
 在使用springboot时，浏览器过来数据在后台接收时有几种注解配置的方式 
 
 - `@PathVariable("currPage")`在url路径中，也就是问号前面 例如：www.thevil.com/admin/list/page/1/20?,其中 1,20作为分页参数，就是PathVariable参数
@@ -20,7 +20,7 @@ tags: [java]
 
 这里我就是写了一个Map转换工具类，利用反射将Map对象的值设置到 POJO对象的每个对应的属性，同时判断这个属性值是否为空，如果为空就抛出异常提示，提示这个字段为空，如果格式不正确就提示格式不对。这样就一段代码把数据格式，非空判断都做完了，这样用起来就很方便了，还可以设置一个参数 ：isAllowNull 是否允许为空，当不需要进行非空判断的时候用。是不是很方便！
 
-## 代码（Code）
+## 源代码（Code）
 
 说了这么多，直接上代码
 
