@@ -6,7 +6,7 @@ category: java
 tags: [java] 
 ---
 
-## 问题（Question）
+## 描述（Description）
 最近在用[Element的UI框架](http://element-cn.eleme.io/)，需要使用日期控件DateTimePicker  
 
 ``` javascript
@@ -19,10 +19,10 @@ tags: [java]
 ```
 使用的是VUE绑定的数据,发现控件显示的和传递到后台的值格式不一致
 
-## 报错（Error Info）
+## 问题现象（Error）
 绑定的参数传递到后台之后报错了，看报错信息才知道这个控件返回的时间格式和显示的不是一样的 ，显示是 yyyy-MM-dd'T'HH:mm:ss ，但是后台传递的是 yyyy-MM-dd'T'HH:mm:ss.SSSZ ，所以使用 new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").parse(date) 格式化时就报错了。
 
-## 解决(Answer)
+## 源代码（Code）
 因为不知道这个UI怎么设置传递参数和界面显示一致，所以只能java写了个日期转换的工具，然后问题就解决了！
 
 工具类如下：
