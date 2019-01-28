@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:  咸阳道主
+title:  咸阳东道主
 subtitle: 分享时光,分享技术。
 name: 咸阳道主
 email: day108@126.com
-description: 本站是咸阳道东主的生活技术分享博客。内容涵盖小说，生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构、大数据演进、高可用架构、中间件使用、系统监控等相关的研究与知识分享。
+description: 这里是是咸阳东道主的生活技术分享博客。内容涵盖小说，生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构、大数据演进、高可用架构、中间件使用、系统监控等相关的研究与知识分享。
 keywords: 咸阳道主,www.108day.com,https://108day.github.io,day108@126.com,分享时光,分享技术,Spring,Spring Boot,Spring Cloud,MongoDB,Java,Jvm,Docker,生活故事,架构,大数据,一线,开发者,编程,代码,开源,IT网站,物联网,Developer,Programmer,Coder,Geek,IT技术博客,Java,C/C++,Python,Shell
 encoding: "utf-8"
 favicon: favicon.png 
