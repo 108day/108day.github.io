@@ -29,34 +29,38 @@ tags: [java]
 
 ``` java
 public static Date parse(String date) {
-    	if(date!=null) {
-		try {
-		  if(date.contains("-")) {
-			if(date.contains(":") && date.lastIndexOf("Z")>0) {
-				date = date.replace("Z", " UTC");
-					return new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS Z").parse(date);
-			}else if(date.contains(":")){
-					return new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").parse(date);
-			}else {
-					return new SimpleDateFormat("yyyy-MM-dd").parse(date);
+		if (date != null) {
+			try {
+				if (date.contains("-")) {
+					if (date.contains(":") && date.contains("T") && date.lastIndexOf("Z") > 0) {
+						date = date.replace("Z", " UTC");
+						return new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS Z").parse(date);
+					} else if (date.contains(":") && date.contains("T")) {
+						return new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").parse(date);
+					} else if (date.contains(":")) {
+						return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(date);
+					} else {
+						return new SimpleDateFormat("yyyy-MM-dd").parse(date);
+					}
+				}
+				if (date.contains("/")) {
+					if (date.contains(":") && date.contains("T") && date.lastIndexOf("Z") > 0) {
+						date = date.replace("Z", " UTC");
+						return new SimpleDateFormat("yyyy/MM/dd'T'HH:mm:ss.SSS Z").parse(date);
+					} else if (date.contains(":") && date.contains("T")) {
+						return new SimpleDateFormat("yyyy/MM/dd'T'HH:mm:ss").parse(date);
+					} else if (date.contains(":")) {
+						return new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").parse(date);
+					} else {
+						return new SimpleDateFormat("yyyy/MM/dd").parse(date);
+					}
+				}
+			} catch (ParseException e) {
+				e.printStackTrace();
 			}
 		}
-		if(date.contains("/")) {
-			if(date.contains(":") && date.lastIndexOf("Z")>0) {
-					date = date.replace("Z", " UTC");
-					return new SimpleDateFormat("yyyy/MM/dd'T'HH:mm:ss.SSS Z").parse(date);
-			}else  if(date.contains(":")) {
-					return new SimpleDateFormat("yyyy/MM/dd'T'HH:mm:ss").parse(date);
-			}else {
-					return new SimpleDateFormat("yyyy/MM/dd").parse(date);
-			}
-		}
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-    	}
-        return null;
-    }
+		return null;
+	}
 ```
 
 这个UI和平时用的 不一样，所以特别记录下使用的过程，以免后续遗忘！
