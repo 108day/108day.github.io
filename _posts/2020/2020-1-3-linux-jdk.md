@@ -24,27 +24,6 @@ author: 一百零八天
 >或者使用[XFTP](https://www.netsarang.com/zh/xftp/)可以上传文件，链接之前，请打开远程登录功能，并且打开21,22端口或者直接关闭防火墙（本地测试可以直接关闭防火墙）
 ![XFTP](https://www.netsarang.com/wp-content/uploads/2018/12/xftp_wc.png)
 
-### 可能会遇到的问题
-**1. XShell远程连接不上** 
-> 原因可能是远程连接没有打开，或者远程连接的端口21没有打开（21远程连接，22远程文件传输）
-
-永久打开防火墙端口命令如下：
-```
-# firewall-cmd --zone=public --add-port=21/tcp --permanent
-# firewall-cmd --zone=public --add-port=22/tcp --permanent
-```
-关闭防火墙端口
-```
-# firewall-cmd --zone= public --remove-port=80/tcp --permanent
-```
-关闭防护墙
-```
-# systemctl stop firewalld
-```
-重新载入防火墙
-```
-# firewall-cmd --reload
-```
 
 ### 删除已经存在的JDK
 ```
@@ -89,5 +68,26 @@ author: 一百零八天
 
 成功！
 
+### 可能会遇到的问题
+**1. XShell远程连接不上** 
+> 原因可能是远程连接没有打开，或者远程连接的端口21没有打开（21远程连接，22远程文件传输）
+
+永久打开防火墙端口命令如下：
+```
+# firewall-cmd --zone=public --add-port=21/tcp --permanent
+# firewall-cmd --zone=public --add-port=22/tcp --permanent
+```
+关闭防火墙端口
+```
+# firewall-cmd --zone= public --remove-port=80/tcp --permanent
+```
+关闭防护墙
+```
+# systemctl stop firewalld
+```
+重新载入防火墙
+```
+# firewall-cmd --reload
+```
 -----------------------------The end-----------------------------
 XShell文件:https://pan.baidu.com/s/11YG7M9ph0dTviu-jWl9AwQ 提取码：gcxx
