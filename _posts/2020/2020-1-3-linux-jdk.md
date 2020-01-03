@@ -1,6 +1,10 @@
------
-# Linux CentOS 7 操作系统配置JDK
------
+---
+title: Linux CentOS 7 操作系统配置JDK
+tags: Linux CentOS 7 操作系统配置JDK
+titlebar: arch
+author: 一百零八天
+
+---
 
 ## 前言
 
